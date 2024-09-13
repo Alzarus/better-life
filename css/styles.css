@@ -1,0 +1,169 @@
+:root {
+  --primary-blue: #00a4cc;
+  --secondary-grey: #4a4a4a;
+  --light-grey: #f4f4f4;
+  --accent-green: #8bc34a;
+  --white: #ffffff;
+  --highlight-blue: #00bfff;
+  --save-color: #28a745;
+  --reset-color: #dc3545;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--light-grey);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  text-align: center;
+  border-top: 10px solid var(--primary-blue);
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: var(--primary-blue);
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--secondary-grey);
+  margin-bottom: 20px;
+}
+
+.status-label,
+.action-label,
+.time-label {
+  margin-bottom: 15px;
+  color: var(--secondary-grey);
+  font-weight: bold;
+}
+
+.status-info {
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+.action-info {
+  color: var(--highlight-blue);
+  font-weight: bold;
+}
+
+#time {
+  font-size: 36px;
+  color: var(--primary-blue);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#prompt {
+  display: none;
+  color: var(--accent-green);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button {
+  margin: 15px 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-action {
+  background-color: var(--primary-blue);
+}
+
+.btn-action:hover {
+  background-color: var(--accent-green);
+}
+
+.btn-config {
+  margin-top: 20px;
+  background-color: var(--primary-blue);
+  width: 80%;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.btn-config:hover {
+  background-color: var(--accent-green);
+}
+
+.settings {
+  display: none;
+  margin-top: 15px;
+}
+
+.settings label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--secondary-grey);
+}
+
+.settings input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  font-size: 16px;
+}
+
+.btn-save {
+  background-color: var(--save-color);
+  width: 48%;
+}
+
+.btn-save:hover {
+  background-color: #218838;
+}
+
+.btn-reset {
+  background-color: var(--reset-color);
+  width: 48%;
+}
+
+.btn-reset:hover {
+  background-color: #c82333;
+}
+
+button:disabled {
+  background-color: var(--light-grey);
+  color: var(--secondary-grey);
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.language-selector select {
+  padding: 5px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Better Life",
+  "tagline": "Mejora tu bienestar, paso a paso",
+  "status": "Estado",
+  "current_action": "Acción actual",
+  "time_left": "Tiempo restante",
+  "next": "Siguiente",
+  "back": "Atrás",
+  "pause": "Pausa",
+  "configure": "Configurar",
+  "save_settings": "Guardar Configuraciones",
+  "reset_settings": "Restablecer Configuraciones",
+  "sitting_time": "Tiempo sentado (minutos)",
+  "standing_time": "Tiempo de pie (minutos)",
+  "walking_time": "Tiempo de caminata (minutos)",
+  "stretching_time": "Tiempo de estiramiento (minutos)"
+}

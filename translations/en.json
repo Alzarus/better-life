@@ -1,0 +1,17 @@
+{
+  "title": "Better Life",
+  "tagline": "Enhance Your Well-Being, One Step at a Time",
+  "status": "Status",
+  "current_action": "Current action",
+  "time_left": "Time left",
+  "next": "Next",
+  "back": "Back",
+  "pause": "Pause",
+  "configure": "Configure",
+  "save_settings": "Save Settings",
+  "reset_settings": "Reset Settings",
+  "sitting_time": "Sitting Time (minutes)",
+  "standing_time": "Standing Time (minutes)",
+  "walking_time": "Walking Time (minutes)",
+  "stretching_time": "Stretching Time (minutes)"
+}

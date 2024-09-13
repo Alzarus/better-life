@@ -1,0 +1,14 @@
+{
+  "name": "postura",
+  "version": "1.0.0",
+  "description": "Auxiliador de postura para o bem-estar de um trabalho home office.",
+  "main": "worker.js",
+  "scripts": {
+    "start": "http-server ./"
+  },
+  "author": "alzarus.25@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
