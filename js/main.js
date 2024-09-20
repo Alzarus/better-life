@@ -38,6 +38,12 @@ let timeRemaining = times.sitting;
 
 const worker = new Worker("js/worker.js");
 
+document.addEventListener("visibilitychange", () => {
+  if (!paused && document.visibilityState === "visible") {
+    worker.postMessage({ action: "resume" });
+  }
+});
+
 function saveSettings() {
   const sittingTime = parseInt(sittingInput.value) * 60;
   const standingTime = parseInt(standingInput.value) * 60;
@@ -74,12 +80,11 @@ function updateStatus() {
 }
 
 function switchPhase() {
-  if (currentPhase === 2 || currentPhase === 3) {
-    prompt.style.display = "block";
-    return;
-  }
   currentPhase = (currentPhase + 1) % statusArray.length;
   updateStatus();
+
+  paused = false;
+  pauseBtn.textContent = "Pause";
 }
 
 document.getElementById("saveBtn").addEventListener("click", saveSettings);
@@ -99,6 +104,7 @@ document.getElementById("backBtn").addEventListener("click", () => {
 pauseBtn.addEventListener("click", () => {
   paused = !paused;
   pauseBtn.textContent = paused ? "Resume" : "Pause";
+
   worker.postMessage({ action: paused ? "pause" : "resume" });
 });
 
