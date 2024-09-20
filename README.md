@@ -21,7 +21,7 @@ Beep sound by [Kagateni](https://freesound.org/people/Kagateni/sounds/404358/) v
 - http://192.168.100.13:8080 / http://127.0.0.1:8080 (access on the browser)
 - CTRL-C (stop the server)
 
-# The Type and Scope
+## The Type and Scope
 The type is contained within the title and can be one of these types:
 
 - breaking: Introduces a breaking change
